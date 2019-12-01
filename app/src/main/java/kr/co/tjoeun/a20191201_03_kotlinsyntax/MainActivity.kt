@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         val user4 = User()
         user4.name = "김미현"
         user4.loginId = "student2"
-
+        userList.add(user4)
 
 
 //        var count = 0
@@ -83,5 +83,8 @@ class MainActivity : AppCompatActivity() {
             Log.d("사람이름/아이디", "${user.name} / ${user.loginId}")
         }
 
+        for (i in 0..5) {
+            Log.d("뽑힌숫자", "${i}")
+        }
     }
 }

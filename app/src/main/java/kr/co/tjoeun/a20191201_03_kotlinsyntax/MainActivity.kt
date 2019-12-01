@@ -53,16 +53,35 @@ class MainActivity : AppCompatActivity() {
         Log.d("들어있는사람수", "${userList.size} 명" )
         Log.d("1번칸에 있는 사람이름", "${userList.get(1).name}")
 
+//
+//        val user3 = User()
+//        user3.name = "조경진"
+//        user3.loginId = "cho881020"
+//
+//        Log.d("조경진이 있는 위치","${userList.indexOf(user3)}")
 
-        val user3 = User()
-        user3.name = "조경진"
-        user3.loginId = "cho881020"
-
-        Log.d("조경진이 있는 위치","${userList.indexOf(user3)}")
+        val user4 = User()
+        user4.name = "김미현"
+        user4.loginId = "student2"
 
 
 
+//        var count = 0
+//        while (true) {
+//
+//            count++
+//
+//            if(count >= 10) {
+//                break
+//            }
+//        }
 
+
+//        사용자 목록에 들어있는 사람들의 이름 /아이디 출력
+
+        for (user in userList) {
+            Log.d("사람이름/아이디", "${user.name} / ${user.loginId}")
+        }
 
     }
 }
